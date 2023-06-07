@@ -1,5 +1,5 @@
-namespace Garage
-{
+namespace Garage;
+
     public class Vehicle
     {
         public string MainColor { get; set; }
@@ -18,4 +18,13 @@ namespace Garage
             Console.WriteLine("");
         }
     }
-}
+            public interface IElectric 
+            {
+                void ChargeBattery();
+                int CurrentChargePercentage { get; }
+            }
+            public interface IGas 
+            {
+                void RefuelTank();
+                int CurrentTankPercentage { get; }
+            }
